@@ -1,0 +1,156 @@
+/* margem inicial pagina */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*sessão flex em colunas */
+main{
+  display: flex;
+  flex-direction: column;
+}
+
+/*fundo imagem */
+div.bg{
+  background-image: url("/img/praiabg.jpg");
+  filter: blur(5px);
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+}
+
+/* Imagem e texto com botão*/
+div.principal{ 
+  position: absolute;
+  justify-content: space-between;
+  display: flex;
+  top: 30%;
+  left: 20%;
+  right: 10%;
+}
+
+/*bloco texto com botão*/
+.texto_botao{
+  margin: 10px;
+  align-content: center;
+}
+
+/*imagem poluição do problema*/
+#ft{
+  width: 300px;
+  height: 400px;
+}
+
+/*texto problema */
+#texto{
+  border-radius: 10px;
+  width: 500px;
+  padding: 5px;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Times New Roman", Times, serif;
+  color: whitesmoke;
+  background-color: rgba(31, 168, 169, 0.5);
+}
+/*botão link para problema */
+#botao{
+  letter-spacing: 3px;
+  margin-top: 10px;
+  margin-left: 200px;
+  width: 100px;
+  display: block;
+  color: #EBe5ce;
+  background-color: #39CACC;
+  font-size: 20px;
+  text-align: center;
+  padding: 7px 8px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*animação do botão*/
+#botao:hover {
+  background-color: #39CACC;
+  color: #EBe5ce;
+  border-radius: 10px;
+  transition: 1s;
+  transform: scale(1.1);
+}
+
+/*segunda parte e fundo*/
+.second{
+  background: linear-gradient(rgba(9,50,50,1) 14%, rgba(22,117,118,1) 69%, rgba(31,168,169,1) 100%);
+  display: flex;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 790px;
+}
+
+/*grupo caixas de sessões*/
+.group{
+  margin-left: 80px;
+  padding-top: 150px;
+  display: flex;
+  justify-content:space-around;
+  text-align: center;
+  width: 40px;
+  height: 80px;
+}
+
+/*caixa sessão*/
+.box{
+  display: flex;
+  margin: 20px;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*titulo da sessão*/
+h3{
+  color: white;
+  font-size: 50px;
+  
+}
+
+/*resumo da sessão*/
+.subtext{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+/*linha de divisão*/
+.linha {
+  border-left: 2px solid white;
+  height: 500px;
+}
+
+/*botão com link para sessão*/
+#botao2{
+  letter-spacing: 3px;
+  width: 100px;
+  color: #EBe5ce;
+  background-color: #39CACC;
+  font-size: 20px;
+  text-align: center;
+  padding: 7px 8px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Animação do botão de sessão*/
+#botao2:hover {
+  background-color: #39CACC;
+  color: #EBe5ce;
+  border-radius: 10px;
+  transition: 1s;
+  transform: scale(1.1);
+}

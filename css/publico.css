@@ -1,0 +1,75 @@
+/* margem inicial pagina */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* sessão publico */
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+/* titulo */
+h1{
+    position: absolute;
+    text-align: center;
+    font-size: 60px;
+    color: whitesmoke;
+    width: 500px;
+    top: 15%;
+    left: 40%;
+    background-color: rgba(31, 168, 169, 0.1);
+    border-radius: 10px;
+    width: 400px;
+}  
+
+/* fundo primeira parte */
+div.bg1{
+background-image: url("/img/fundo_publico1.jpg");
+display: flex;
+background-repeat: no-repeat;
+background-size: cover;
+height: 700px;
+}
+
+/* posicionar texto 1 */
+div.bloco1{ 
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+    top: 40%;
+    left: 55%;
+    right: 10%;
+}
+  
+/* aparencia dos textos */
+#texto{
+    border-radius: 10px;
+    width: 500px;
+    padding: 5px;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Times New Roman", Times, serif;
+    color: whitesmoke;
+    background-color: rgba(31, 168, 169, 0.6);
+}
+
+/* fundo segunda parte */
+div.bg2{
+background-image: url("/img/fundo_publico2.jpg");
+display: flex;
+background-repeat: no-repeat;
+background-size: cover;
+height: 750px;
+}
+
+/* posicionar texto 2 */
+div.bloco2{ 
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+    text-align: center;
+    top: 140%;
+    left: 5%;
+}

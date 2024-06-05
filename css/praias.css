@@ -1,0 +1,210 @@
+/* margem inicial pagina */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* fundo */
+div.bg{
+    background: linear-gradient(to left bottom,rgba(9,50,50,1) 14%, rgba(22,117,118,1) 69%, rgba(31,168,169,1) 100%);
+    filter: blur(5px);
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+}
+
+/* bloco carrosel e status */
+.praia_main{
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    top: 25%;
+    left: 10%;
+}
+
+/* status da praia */
+.texto{
+    margin: 60px;
+    border-radius: 10px;
+    width: 400px;
+    padding: 5px;
+    text-align: left;
+    font-size: 30px;
+    font-family: "Times New Roman", Times, serif;
+    color: whitesmoke;
+    background-color: rgba(31, 168, 169, 0.5);
+  }
+
+/* muda cor da condições da praia */
+.condicao_boa{
+    color: darkgreen;
+    font-weight: bolder;
+}
+
+.condicao_media{
+    color: yellow;
+    font-weight: bolder;
+}
+
+.condicao_ruim{
+    color: red;
+    font-weight: bolder;
+}
+
+/* carrosel de imagens*/
+.carrosel{
+    margin: 0auto;
+    width: 800px;
+    height: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.imagens{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.imagens input{
+    display: none;
+}
+
+.foto1{
+    width: 25%;
+    position: relative;
+}
+
+.foto{
+    width: 25%;
+    position: relative;
+}
+
+.foto img{
+    max-width: 100%;
+    width: 800px;
+}
+
+.navegacaoManual{
+    position: absolute;
+    width: 800px;
+    margin-top: 370px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #FFF;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+
+}
+
+.manual-btn:hover{
+    background-color: #FFF;
+}
+
+#radio1:checked ~ .foto1{
+    margin-left: 0;
+    transition: 2s;
+}
+
+#radio2:checked ~ .foto1{
+    margin-left: -25%;
+    transition: 2s;
+}
+#radio3:checked ~ .foto1{
+    margin-left: -50%;
+    transition: 2s;
+}
+#radio4:checked ~ .foto1{
+    margin-left: -75%;
+    transition: 2s;
+}
+
+.navegacao div{
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navegacao{
+    position: absolute;
+    width: 800px;
+    margin-top: 370px;
+    display: flex;
+    justify-content: center ;
+}
+
+.navegacao div:not(:last-child){
+    margin-right: 40px; 
+}
+
+#radio1:checked ~ .navegacao .auto-btn1{
+    background-color: #FFF;
+}
+
+#radio2:checked ~ .navegacao .auto-btn2{
+    background-color: #FFF;
+}
+
+#radio3:checked ~ .navegacao .auto-btn3{
+    background-color: #FFF;
+}
+
+#radio4:checked ~ .navegacao .auto-btn4{
+    background-color: #FFF;
+}
+
+/* todas praias */
+.lista_praias{
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+    text-align: center;
+    align-items: left;
+    top: 100%;
+    left: 10%;
+}
+
+/* foto praia e status */
+.bloco{
+    position: relative;
+    justify-content: space-between;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: left;
+    margin: 20px;
+}
+
+/* fotos praias */
+.img_praias{
+    width: 250px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* status praia */
+.statues{
+    margin: 10px;
+    border-radius: 10px;
+    width: 180px;
+    padding: 5px;
+    text-align: left;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    color: whitesmoke;
+    background-color: rgba(31, 168, 169, 0.5);
+  }

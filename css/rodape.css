@@ -1,0 +1,15 @@
+/* rodape */
+.rodape{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #143E3E;
+    text-align: center;
+    height: 10vh;
+  }
+
+  /*tamanho nomes do rodape*/
+.nomes{
+  font-size: 10px;
+  width: 200px;
+}
